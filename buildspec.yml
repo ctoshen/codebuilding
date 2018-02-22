@@ -1,7 +1,7 @@
 version: 0.2
 
 phases:
-  install:
+  build:
     commands:
-      - echo Entered the install phase...
+      - echo Entered the build phase...
       - sudo apt-get update
