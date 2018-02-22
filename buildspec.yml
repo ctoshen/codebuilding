@@ -4,5 +4,4 @@ phases:
   install:
     commands:
       - echo Entered the install phase...
-      - apt-get update -y
-      - apt-get install -y maven
+      - sudo apt-get update
