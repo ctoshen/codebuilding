@@ -5,7 +5,6 @@ phases:
     commands:
       - echo Entered the build phase...
      #- sudo apt-get clean && rm -rf /var/lib/apt/lists/*
-      - jq --version
       #- sudo apt-get update
       - sudo pip install awscli --upgrade --user
       - aws --version
