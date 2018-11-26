@@ -12,3 +12,4 @@ containers:
                     #- sudo apt-get -y install maven
                     #- mvn install
                     - pip install aws-sam-cli
+                    - pip show aws-sam-cli --files
