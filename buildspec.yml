@@ -3,7 +3,7 @@ version: 0.2
 phases:
     pre_build:
         commands:
-            - ulimit -n 500000
+            - cat /etc/security/limits.conf 
     build:
         commands:
             #- echo Entered the build phase...
