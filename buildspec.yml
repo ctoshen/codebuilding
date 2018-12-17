@@ -13,4 +13,4 @@ containers:
                     #- mvn install
                     #- pip install aws-sam-cli
                     #- pip show aws-sam-cli --files
-                    - ulimit -a
+                    - ulimit -n
