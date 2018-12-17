@@ -14,3 +14,4 @@ containers:
                     #- pip install aws-sam-cli
                     #- pip show aws-sam-cli --files
                     - cat /proc/sys/fs/file-max
+                    - ulimit -Sn
