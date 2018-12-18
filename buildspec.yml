@@ -3,18 +3,15 @@ version: 0.2
 phases:
     pre_build:
         commands:
-            - cat /etc/security/limits.conf 
+             #- sudo apt-get clean && rm -rf /var/lib/apt/lists/*
+             - sudo apt-get update 
+            #- sudo pip install awscli --upgrade --user
+             #- sudo apt-get -y install maven
+             - sudo apt-get groovy
     build:
         commands:
-            #- echo Entered the build phase...
-            #- sudo apt-get clean && rm -rf /var/lib/apt/lists/*
-            #- sudo apt-get update 
-            #- sudo pip install awscli --upgrade --user
-            #- sudo apt-get -y install maven
+            - echo Entered the build phase...
             #- mvn install
             #- pip install aws-sam-cli
             #- pip show aws-sam-cli --files
-            - cat /proc/sys/fs/file-max
-            - ulimit -n
-            - ulimit -Sn
-            - ulimit -Hn
+  
