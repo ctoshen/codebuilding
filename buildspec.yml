@@ -4,11 +4,12 @@ phases:
     pre_build:
         commands:
              #- sudo apt-get clean && rm -rf /var/lib/apt/lists/*
-             -sudo apt-add-repository ppa:groovy-dev/groovy            
+             - sudo apt-add-repository ppa:groovy-dev/groovy            
              - sudo apt-get update 
              #- sudo pip install awscli --upgrade --user
              #- sudo apt-get -y install maven
              - sudo apt-get groovy
+             - groovy -version
     build:
         commands:
             - echo Entered the build phase...
