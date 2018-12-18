@@ -3,7 +3,8 @@ version: 0.2
 phases:
     pre_build:
         commands:
-             #- sudo apt-get clean && rm -rf /var/lib/apt/lists/*           
+             - sudo apt-get purge openjdk* 
+             - sudo apt-add-repository ppa:groovy-dev/groovy
              - sudo apt-get update 
              #- sudo pip install awscli --upgrade --user
              #- sudo apt-get -y install maven
