@@ -6,7 +6,7 @@ phases:
              - sudo apt-get update 
              #- sudo pip install awscli --upgrade --user
              #- sudo apt-get -y install maven
-             - sudo apt-get install groovy
+             - sudo apt-get -y install groovy
              - groovy -version
     build:
         commands:
