@@ -17,5 +17,6 @@ phases:
 artifacts:
    files:
       - template.json
+      - /codebuild/output/log
         
   
