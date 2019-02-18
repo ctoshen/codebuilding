@@ -7,9 +7,11 @@ phases:
     build:
         commands:
             - echo Entered the build phase...
+            - echo "Hello, there!" > hello.txt
 artifacts:
    files:
       - template.json
+      - hello.txt
    name: test-$(date +%Y-%m-%d)
         
   
