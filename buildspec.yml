@@ -3,20 +3,13 @@ version: 0.2
 phases:
     pre_build:
         commands:
-             - sudo apt-get update 
-             #- sudo pip install awscli --upgrade --user
-             #- sudo apt-get -y install maven
-             - sudo apt-get -y install groovy
-             - groovy -version
+             - sudo apt-get update -y
     build:
         commands:
             - echo Entered the build phase...
-            #- mvn install
-            #- pip install aws-sam-cli
-            #- pip show aws-sam-cli --files
 artifacts:
    files:
       - template.json
-      - /codebuild/output/log
+   name: test-$(date +%Y-%m-%d)
         
   
