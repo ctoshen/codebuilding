@@ -1,7 +1,7 @@
 version: 0.2
 
 phases:
-    build:
+    install:
         commands:
             - echo "Checking the python versions"
             - pyenv install —-list
