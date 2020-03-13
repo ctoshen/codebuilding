@@ -6,12 +6,11 @@ phases:
              - sudo apt-get update -y
     build:
         commands:
-            - echo Entered the build phase...
-            - echo "Hello, there!" > hello.txt
+            - echo "Checking the python versions"
+            - pyenv install —list | grep “ 3\.[78]" 
 artifacts:
    files:
       - template.json
-      - hello.txt
    name: test-$(date +%Y-%m-%d)
         
   
