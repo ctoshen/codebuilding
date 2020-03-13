@@ -4,7 +4,7 @@ phases:
     install:
         commands:
             - echo "Checking the python versions"
-            - pyenv install —-list
+            - pyenv versions
 artifacts:
    files:
       - template.json
